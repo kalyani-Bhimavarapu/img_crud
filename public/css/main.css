@@ -1,0 +1,14 @@
+body {
+  background-color: #E1A2B8  !important;
+}
+.card-img {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.text-whitemain {
+  font-size: 50px;
+  font-weight: 500;
+}
