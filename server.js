@@ -21,7 +21,8 @@ mongoose.connect('mongodb+srv://admin5:admin5@cluster0.uoe7c.mongodb.net/imagdb?
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
-//route for the index
+
+//route 
 app.get('/', async (request, response) => {
   
   let blogs = await Blog.find().sort({ timeCreated: 'desc' });
@@ -33,4 +34,4 @@ app.use(express.static('public'));
 app.use('/blogs', blogRouter);
 
 //listen port
-app.listen(5000);
+app.listen(7000);

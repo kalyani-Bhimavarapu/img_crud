@@ -1,5 +1,5 @@
 body {
-  background-color: #E1A2B8  !important;
+  background-color:#21bcc7  !important;
 }
 .card-img {
   
@@ -11,4 +11,5 @@ body {
 .text-whitemain {
   font-size: 50px;
   font-weight: 500;
+  color: #fff;
 }

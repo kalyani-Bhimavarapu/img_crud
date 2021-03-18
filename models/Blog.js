@@ -29,7 +29,7 @@ const blogSchema = new mongoose.Schema({
   },
   img: {
     type: String,
-    default: 'placeholder.jpg',
+    //default: 'placeholder.jpg',
   },
   slug: { type: String, slug: 'title', unique: true, slug_padding_size: 2 },
 });
@@ -39,7 +39,7 @@ blogSchema.pre('validate', function (next) {
   if (this.description) {
     this.description = htmlPurify.sanitize(this.description);
     this.snippet = stripHtml(this.description.substring(0, 200)).result;
-  }
+  }   
 
   next();
 });
